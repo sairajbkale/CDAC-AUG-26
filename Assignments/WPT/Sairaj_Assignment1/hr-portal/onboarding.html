@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Onboarding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div id="nav-logo">
+            <img src="https://cdn.vectorstock.com/i/1000v/15/08/human-resources-sign-icon-hr-symbol-vector-11241508.jpg"
+                alt="HR Logo">
+        </div>
+        <div id="nav-link">
+            <ul id="nav-ul">
+                <li><a href="directory.html" class="nav-opt">Directory</a></li>
+                <li><a href="onboarding.html" class="nav-opt">Onboarding</a></li>
+                <li><a href="login.html" class="nav-opt">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="onboarding-form">
+        <div>
+            <h2 id="ob-title">Onboarding Form</h2>
+        </div>
+        <form action="directory.html" method="get">
+            <div>
+                <label>Full Name</label><br>
+                <input type="text" class="on-form-ip" placeholder="Enter Name">
+            </div>
+            <div>
+                <label>Official Email</label><br>
+                <input type="email" class="on-form-ip" placeholder="Enter Email">
+            </div>
+            <div>
+                <label>Temporary Password</label><br>
+                <input type="password" class="on-form-ip" placeholder="Enter Password">
+            </div>
+            <div>
+                <label>Date of Birth</label><br>
+                <input type="date" class="on-form-ip">
+            </div>
+            <div>
+                <label>Joining Date</label><br>
+                <input type="date" class="on-form-ip">
+            </div>
+            <div>
+                <label>Orientation Slot</label><br>
+                <input type="datetime-local" class="on-form-ip">
+            </div>
+            <div>
+                <label>Reporting Time on day one</label><br>
+                <input type="date" class="on-form-ip">
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" name="gender" class="radio-ip">Male <input type="radio" name="gender"
+                    class="radio-ip">Female
+            </div>
+            <div>
+                <label>Highest Qualification</label><br>
+                <select class="on-form-ip">
+                    <option value="101">10th</option>
+                    <option value="102">12th</option>
+                    <option value="103">Diploma</option>
+                    <option value="104">BTECH</option>
+                </select>
+            </div>
+            <div>
+                <label>Department</label><br>
+                <select class="on-form-ip">
+                    <option>IT</option>
+                    <option>Medical</option>
+                    <option>HR</option>
+                    <option>Law</option>
+                </select>
+            </div>
+            <div>
+                <label>Current Address</label><br>
+                <textarea placeholder="Enter Address" class="on-form-ip"></textarea>
+            </div>
+            <div>
+                <label>Passport Photo or Resume: </label>
+                <input type="file" class="on-form-ip">
+            </div>
+            <div>
+                <input type="checkbox"> I agree to terms and conditions
+            </div>
+            <div id="btns">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button">Button</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="location">
+        <h2>Location</h2>
+        <iframe src="https://maps.google.com/maps?q=India%20Gate,New%20Delhi,India&output=embed" width="900"
+            height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+</body>
+
+</html>

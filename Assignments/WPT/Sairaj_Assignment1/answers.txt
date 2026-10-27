@@ -1,0 +1,64 @@
+1. A user opens your portfolio from a link. Describe step by step what happens between the browser and the server, 
+and draw a simple client–server diagram (hand-drawn and photographed is fine). Say where the app logic and the database 
+sit.
+Answer:
+Step 1: Broswer will fetch the address of the portfolio website and send a HTTP request with method get to server 
+Step 2: Server will reveice the request then communicate with database if required 
+Step 3: Server process the request and sends a HTTP response back to browser.
+
+2. Your contact form sends a visitor's message to a server. Should it use GET or POST, and why? What happens if method 
+is left out? Name the status code the server returns on success and the family of codes that means the server failed.
+Answer:
+When contact form sends a visitor's message to a server , it should use post because get is used to fetch some data from 
+server and post is used to send data to server and if method is left out then get is the default method that will be used.
+200(ok),201(created),204(no content) is the status code the server returns on success and 400-499 is family of codes that
+tells that it is users fault then 500-599 tells that it is servers fault
+
+3. Name the three types of CSS and say where each is written. If all three colour the same paragraph differently, which 
+wins? Which type would you use for a style shared by four pages, and why?
+Answer:
+There are three types of CSS named as : Inline (Written inside the tag of html),Internal (Written inside the head section
+of html program using <style> tag),External CSS (Written in separate file and connect it with html using <link> tag with
+relation as "stylesheet")
+If all three CSS types are used to color a paragraph differently then the top priority will be to inline css then internal 
+css and at last external css.For style which will be shared by four pages , i will use external css to achieve modularity 
+because using external css, i need to create only one file of css for my program of 4 pages.
+
+4. A page has <p id="intro" class="note">Hello</p>. Rules exist for *, p, .note and #intro, each with a different color. 
+Which applies, and what is the full order of precedence from strongest to weakest?
+Answer:
+Here the rule of #intro (id) will be applied , the order of precedence is as follows id(#)->class(.)->tag<p>->Universal Selector(*)
+
+5. Explain padding and margin with a small drawing of a <div> showing content, padding, border and margin. What does 
+box-sizing: border-box change?
+Answer:
+Padding is used when we want space between border and the elements inside the border , margin is used when we want space 
+outside the border.box-sizing:border-box helps in ensuring that height and width of element include its border and padding 
+that makes the size of the element predictable.
+
+6. Where does JavaScript code run, and what is the JS engine in a browser? Why is no compiler needed to run JavaScript? 
+Name two things JavaScript can do on a web page that HTML and CSS alone cannot.
+Answer:
+Javascript runs in a javascript runtime , such as browser using its javascript engine . The engine interprets the code using
+just-in-time compiler so we don't need to compile javascript manually beforehand.Example of engine are V8 for chrome.Javascript 
+helps in writing logic that css and html cannot do.
+
+7. JavaScript has no type safety. Explain what happens when you write a = 5; and then a = "hello";. Name the three data types
+you have learned so far.
+Answer:
+Javascript is a dynamically typed language and the same variable can hold different types of values at different times. Datatypes
+of javascript are number,string and boolean.
+
+8. Explain the four values of the CSS position property (static, relative, absolute, fixed).When would you use top, left, right 
+and bottom?
+Answer:
+Static represents default position of the element. Relative is used to move the element from his original position and here we
+use top,left right and bottom to move the element,absolute is used to move elements relative to its parent and if there is no 
+parent then it is moved to relative to its nearest ancestor .Fixed is used to fix an element at a position on the web page.
+
+9. A container has display: flex and three boxes with flex values of 1, 2 and 1. How is the width shared between the boxes? 
+What do gap and justify-content: center do?
+Answer:
+When display:flex is used , the space is divided according to flex values which in this case is 1:2:1 and since the flex value 
+of box 2 is large, it will have large width.gap is used to create space between items and justify-content:center is used to 
+position elements  at the center.
